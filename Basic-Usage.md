@@ -42,6 +42,10 @@ generate a data summary.
 
 Let's create a workflow named: <b>Creating your first predictive
 experiment</b>:
+![create-workflow](/img/basic_usage/creating_1_predictive_final.png)
+![new-workflow](/img/basic_usage/workflow_name_final.png)
+
+
 
 
 
