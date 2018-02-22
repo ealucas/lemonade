@@ -45,7 +45,89 @@ experiment</b>:
 ![create-workflow](/img/basic_usage/creating_1_predictive_final.png)
 ![new-workflow](/img/basic_usage/workflow_name_final.png)
 
+To summarize the database, first we load the data using the <b>DATA READER</b>
+operation. It is related among the I/O operations we found in the <b>DATA
+SOURCE and TARGET</b> group.
 
+![new-data-reader01](/img/basic_usage/cp_datareader01_final.png)
+
+Select it on the operation's tab and drag it to the grid. The tool provides a
+right-hand flap with all configuration parameters. In the <b> Data source </b>
+field, select the <b> Iris Data Set </b>.
+
+![new-data-reader02](/img/basic_usage/cp_datareader03_final.png)
+
+The <b> Data reader </b> operation has the following parameters:
+
+ * <b>Use first line as reader</b>: The first database's row is intended for
+ attribute names;
+ * <b>Attribute separator </b>: Select which separator attribute type will used
+ in the database;
+ * <b>Treat these values as null(comma-separated)</b>: This feature is used to
+ correct/delete attributes on the data stream;
+ * <b>Infer data source schema</b>:<b> From metadata</b>. Determine how
+ attributes are inferred by the operation. It is recommended that attributes
+ be inferred from the database.
+ * <b>What to do in case of invalid data</b>: <b>Convert Invalid data to
+   NULL</b>. Determines how invalid attributes should be handled.
+
+![data-reader-params](/img/basic_usage/data_reader_attributes_final.png)
+
+The <b>Appearance</b> field allows us to change the boxes operation colors and
+do comments. The <b>Result</b> field allows us to manipulate which info will be
+displayed in result tabs.
+  * <b>Display samples(s) of output(s)</b>: shows a data stream preview.
+  * <b>Display output(s) schema(s)</b>: Displays the database format.
+  * <b>Display text reports (if available)</b>: Displays text reports if
+  available. They are usually tied to algorithm analysis resuts.
+  * <b>Display images and charts(if available)</b>: Displays images and/or
+  charts.
+
+Next we will create a database summary operation. We will be able to know
+our database attributes and identify their main properties.
+
+![summary-op](/img/basic_usage/summary_op_final.png)
+
+The only parameter we will define is the summary name.
+
+![summary-param](/img/basic_usage/summary_p_final.png)
+
+After play the workflow, we have this
+
+![summary-play](/img/basic_usage/summary_play_final.png)
+
+![summary-param](/img/basic_usage/summary_table_final.png)
+
+The main step objective is to make us know the database attributes and be able
+to ask questions that our <i>model</i> can answer. It will analyze the database
+features and predict a result.
+
+It is time to use a set of machine learning operations to create our
+predictive experiment. But first, we need to understand how the machine
+learning techniques will help us to do it.
+
+The <b>classification algorithms</b> are able to identify a certain item
+category based on other items whose attributes are known. They start from
+a database with pre-determinated <b>labels</b> and <b>features</b> and
+"learn" how to sort/categorize new records based on this learning.
+
+To make the things simple, first let's understand the following terms:
+  * <b>Properties</b>: Attributes or characteristics that build the <b>labels
+  </b>. They are the information that are going to be evaluated.
+  * <b>Labels</b>: Elements to which the attributes or characteristics are
+  directed.
+
+<b>Properties</b> are the <i>hypoteses</i> or <i>questions</i> that we can
+elaborate. The <b>labels</b> are the answers. For example: Which <i>label</i>
+fit a characteristics series of a certain type? If an animal has <i>feathers</i>,
+<i>paws adapted to swim</i>, <i>swim</i>, <i>fly</i> and has no <i>crests</i>;
+We can answer with some certain that it is a <i>duck</i>.
+Thus, feathers, feet adapted for swimming, ability to swim, ability to fly, no
+crests are <i>properties</i> while the animal type, in this case, is the
+<i>label</i>.
+
+Now that we have defined some part of the theory, let's go straight to the
+Iris database analysis.
 
 
 
