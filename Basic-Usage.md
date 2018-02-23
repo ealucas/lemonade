@@ -164,7 +164,8 @@ to view the attributes created in the <b>Extract features</b> step.
 
 ![extract-features](/img/basic_usage/extract_features.png)
 
-|![setosa](/img/basic_usage/iris_setosa_extfeat_sample.png)|![versicolor](/img/basic_usage/iris_versicolor_extfeat_sample.png)|![virginica](/img/basic_usage/iris_virginica_extfeat_sample.png)|
+| ![setosa](/img/basic_usage/iris_setosa_extfeat_sample.png) | ![versicolor](/img/basic_usage/iris_versicolor_extfeat_sample.png) | ![virginica](/img/basic_usage/iris_virginica_extfeat_sample.png) |
+| --- | --- | --- |
 
 
 
