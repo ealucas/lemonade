@@ -126,9 +126,45 @@ Thus, feathers, feet adapted for swimming, ability to swim, ability to fly, no
 crests are <i>properties</i> while the animal type, in this case, is the
 <i>label</i>.
 
-Now that we have defined some part of the theory, let's go straight to the
-Iris database analysis.
+From the analysis of each record features, we can predict which species that it
+belongs to. So, the height or width of each specie are the <b>features</b>,
+while the class is the <b>label.</b>
 
+We need to format the workflow operations following the schema below:
+
+![ml-schema](/img/basic_usage/spark_ml_schema.png)
+
+The first step of our experiment is to train a classification model. Each
+model is made by the data structure and a ML algorithm. At the end, we will
+evaluate it using a cross-validation process.
+
+### Extract features
+To build a classification model, we need to extract all features that most
+contribute to the data classification.
+The flowers' species are labeled in three classes:<b>Iris-virginica,
+Iris-setosa, Iris-versicolor</b>, while the features are defined by the
+height and width of the sepal and petal:<b>sepal length, petal length, sepal
+width, petal width</b>.
+
+We must index the values of the three classes into a vector, the input
+parameter to the algorithm is a numeric array. Let's use the <b>Feature
+Index</b> operation to index it. The resulting attribute will call
+<b>label</b>.
+
+![index-feature](/img/basic_usage/index_feature.png)
+
+Then let's do the same to the features using the <b> Feature Assembler</b>
+operation, the resulting array will be named <b>features</b>
+
+![feature-assembler](/img/basic_usage/feature_assembler_parameters.png)
+
+We can use a <i>transformation</i> operation to filter the label and
+the features values for each class in the database. It's purpose is only
+to view the attributes created in the <b>Extract features</b> step.
+
+![extract-features](/img/basic_usage/extract_features.png)
+
+|![setosa](/img/basic_usage/iris_setosa_extfeat_sample.png)|![versicolor](/img/basic_usage/iris_versicolor_extfeat_sample.png)|![virginica](/img/basic_usage/iris_virginica_extfeat_sample.png)|
 
 
 
