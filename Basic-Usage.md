@@ -177,13 +177,13 @@ to view the attributes created in the <b>Extract features</b> step.
 
 ![extract-features](/img/basic_usage/extract_features.png)
 
-| ![setosa](/img/basic_usage/iris_setosa_extfeat_sample.png) | ![versicolor](/img/basic_usage/iris_versicolor_extfeat_sample.png) | ![virginica](/img/basic_usage/iris_virginica_extfeat_sample.png) |
+)
 | --- | --- | --- |
 
 ### Trail Model
 
 <p align="center">
-  <img src="/img/basic_usage/ml_trainning.png">
+  )
 </p>
 
 
@@ -204,14 +204,12 @@ Classifier</b>.
 
 
 ### Classification and Apply Model
+<p align="center">
+  <img src="/img/basic_usage/classification_params.png">
+</p>
 
 <p align="center">
-  <table align="center">
-    <tr>
-      <td><img src="/img/basic_usage/classification_params.png"></td>
-      <td><img src="/img/basic_usage/apply_params.png"></td>
-    </tr>
-  </table>
+  <img src="/img/basic_usage/apply_params.png">
 </p>
 
 
