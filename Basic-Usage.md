@@ -71,8 +71,12 @@ The <b> Data reader </b> operation has the following parameters:
  * <b>What to do in case of invalid data</b>: <b>Convert Invalid data to
    NULL</b>. Determines how invalid attributes should be handled.
 
+<center>
+
 | ![data-reader-params](/img/basic_usage/data_reader_attributes_final.png) |
 | --- |
+
+</center>
 
 The <b>Appearance</b> field allows us to change the boxes operation colors and
 do comments. The <b>Result</b> field allows us to manipulate which info will be
