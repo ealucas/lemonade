@@ -182,25 +182,38 @@ to view the attributes created in the <b>Extract features</b> step.
 
 ### Trail Model
 
-| ![ml-tranning](/img/basic_usage/ml_trainning.png) |
-| --- |
+<p align="center">
+  <img src="/img/basic_usage/ml_trainning.png">
+</p>
+
 
 The model trainning follows the previous image. We need to split the dataflow
 into to sets. One of them will be used for trainning and the other for the
 evaluation. In this example, our model will train the <b>Decision Tree
 Classifier</b>.
 
-![trainning-model](/img/basic_usage/training_model.png)
+<p align="center">
+  <img src="/img/basic_usage/training_model.png">
+</p>
 
 ### Split operation
 
-| ![split-operation](/img/basic_usage/split_params.png) |
-| --- |
+<p align="center">
+  <img src="/img/basic_usage/split_params.png">
+</p>
+
 
 ### Classification and Apply Model
 
-| ![classification-operation](/img/basic_usage/classification_params.png) | ![apply-operation](/img/basic_usage/apply_params.png) |
-| --- | --- |
+<p align="center">
+  <table>
+    <tr>
+      <td><img src="/img/basic_usage/classification_params.png"></td>
+      <td><img src"/img/basic_usage/apply_params.png"></td>
+    </tr>
+  </table>
+</p>
+
 
 Look the parameters of the trainning model operations. <b>Features</b> and
 <b>Label</b> are used at input parameters of the classifier, and the <b>
