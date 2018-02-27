@@ -177,13 +177,10 @@ to view the attributes created in the <b>Extract features</b> step.
 
 ![extract-features](/img/basic_usage/extract_features.png)
 
-)
-| --- | --- | --- |
-
-### Trail Model
+### Train Model
 
 <p align="center">
-  )
+  <img src="/img/basic_usage/ml_training.png" >
 </p>
 
 
