@@ -71,7 +71,8 @@ The <b> Data reader </b> operation has the following parameters:
  * <b>What to do in case of invalid data</b>: <b>Convert Invalid data to
    NULL</b>. Determines how invalid attributes should be handled.
 
-![data-reader-params](/img/basic_usage/data_reader_attributes_final.png)
+| ![data-reader-params](/img/basic_usage/data_reader_attributes_final.png) |
+| --- |
 
 The <b>Appearance</b> field allows us to change the boxes operation colors and
 do comments. The <b>Result</b> field allows us to manipulate which info will be
@@ -167,5 +168,39 @@ to view the attributes created in the <b>Extract features</b> step.
 | ![setosa](/img/basic_usage/iris_setosa_extfeat_sample.png) | ![versicolor](/img/basic_usage/iris_versicolor_extfeat_sample.png) | ![virginica](/img/basic_usage/iris_virginica_extfeat_sample.png) |
 | --- | --- | --- |
 
+### Trail Model
+
+| ![ml-tranning](/img/basic_usage/ml_trainning.png) |
+| --- |
+
+The model trainning follows the previous image. We need to split the dataflow
+into to sets. One of them will be used for trainning and the other for the
+evaluation. In this example, our model will train the <b>Decision Tree
+Classifier</b>.
+
+![trainning-model](/img/basic_usage/training_model.png)
+
+### Split operation
+
+| ![split-operation](/img/basic_usage/split_params.png) |
+| --- |
+
+### Classification and Apply Model
+
+| ![classification-operation](/img/basic_usage/classification_params.png) | ![apply-operation](/img/basic_usage/apply_params.png) |
+| --- | --- |
+
+Look the parameters of the trainning model operations. <b>Features</b> and
+<b>Label</b> are used at input parameters of the classifier, and the <b>
+prediction</b> attribute as return. We will not go into details of the
+algorithm parameters used here. To learn more about them look for operations
+and tutoriais in the documentation index.
+
+### Evaluate Model
+
+To finalize, we need to evaluate the trainning model. So simply add the <b>
+Evaluate model</b> operation in the data stream and insert the parameters. Note
+that the operation receives two data inputs: one that came from trainning and
+other that will be used to evaluate our model.
 
 
