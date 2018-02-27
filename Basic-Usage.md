@@ -205,14 +205,12 @@ Classifier</b>.
 
 ### Classification and Apply Model
 
-<p align="center">
-  <table>
+  <table align="center">
     <tr>
       <td><img src="/img/basic_usage/classification_params.png"></td>
-      <td><img src"/img/basic_usage/apply_params.png"></td>
+      <td><img src="/img/basic_usage/apply_params.png"></td>
     </tr>
   </table>
-</p>
 
 
 Look the parameters of the trainning model operations. <b>Features</b> and
