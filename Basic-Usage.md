@@ -76,10 +76,6 @@ The <b> Data reader </b> operation has the following parameters:
 </p>
 
 
-| ![data-reader-params](/img/basic_usage/data_reader_attributes_final.png) |
-| --- |
-
-
 The <b>Appearance</b> field allows us to change the boxes operation colors and
 do comments. The <b>Result</b> field allows us to manipulate which info will be
 displayed in result tabs.
@@ -97,7 +93,10 @@ our database attributes and identify their main properties.
 
 The only parameter we will define is the summary name.
 
-![summary-param](/img/basic_usage/summary_p_final.png)
+<p align="center">
+  <img src="/img/basic_usage/summary_p_final.png">
+</p>
+
 
 After play the workflow, we have this
 
@@ -139,7 +138,10 @@ while the class is the <b>label.</b>
 
 We need to format the workflow operations following the schema below:
 
-![ml-schema](/img/basic_usage/spark_ml_schema.png)
+<p align="center">
+  <img src="/img/basic_usage/spark_ml_schema.png">
+</p>
+
 
 The first step of our experiment is to train a classification model. Each
 model is made by the data structure and a ML algorithm. At the end, we will
@@ -158,12 +160,16 @@ parameter to the algorithm is a numeric array. Let's use the <b>Feature
 Index</b> operation to index it. The resulting attribute will call
 <b>label</b>.
 
-![index-feature](/img/basic_usage/index_feature.png)
+<p align="center">
+  <img src="/img/basic_usage/index_feature.png">
+</p>
 
 Then let's do the same to the features using the <b> Feature Assembler</b>
 operation, the resulting array will be named <b>features</b>
 
-![feature-assembler](/img/basic_usage/feature_assembler_parameters.png)
+<p align="center">
+  <img src="/img/basic_usage/feature_assembler_parameters.png">
+</p>
 
 We can use a <i>transformation</i> operation to filter the label and
 the features values for each class in the database. It's purpose is only
