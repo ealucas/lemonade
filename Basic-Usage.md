@@ -223,4 +223,39 @@ Evaluate model</b> operation in the data stream and insert the parameters. Note
 that the operation receives two data inputs: one that came from trainning and
 other that will be used to evaluate our model.
 
+<p align="center">
+  <img src="/img/basic_usage/evaluate_model.png">
+</p>
+
+After play, we can access the model evaluation results.
+
+<p align="center">
+  <img src="/img/basic_usage/evaluate_results.png">
+</p>
+
+We use the algorithm accuracy as evaluation metric, finding the value 0,9647.
+Accuracy is usually the starting point for analyzing a model, it equals the
+number of correct predictions divided by the total number of predictions made.
+The accuracy percentage we got was 96,47%.
+
+<p align="center">
+  <img src="/img/basic_usage/evaluate_r1.png">
+</p>
+
+To complete the evaluation and to avoid any ambiguity, since other algorithms
+may present different accuracy values, the result analysis using a confusion
+matrix is required.
+
+<p align="center">
+  <img src="/img/basic_usage/evaluate_g.png">
+</p>
+
+Evaluating the classification matrix (confusion matrix) generated, we can
+verify that algorithm we choose do a good job prediction the database behavior.
+The number of true positives was higher than the number of false negatives
+in the species detection.
+
+Now We leave with you the task of performing this same experiment with other
+algorithms and evaluating which are the best.
+
 
